@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/*estilos para el encabezado de la pagina*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #bbb8ae;
+    height: 3.5rem; 
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/*Estilos para los enlaces*/
+
+ a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/*efecto hover en los enlaces*/
+
+a:hover{
+    color: white;
+}
+
+
+/*estilo para los titulos*/
+.titulo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+    text-align: center;
+    font-size: 39px;
+
+}
+
+/*estilo principal para el main*/
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+/*estilo para el titulo de las secciones*/
+.section-titulo {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+/*contenedor de una cuadricula para organizar elementos en filas y columnas */
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* estilo para los elementos individuales dentro de la cuadrícula */
+.grid-articulo {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* configuración de imágenes dentro de los elementos de la cuadrícula */
+
+.grid-articulo img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+/* estilo para los títulos de los elementos de la cuadrícula */
+
+.grid-articulo h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+/* estilo para los párrafos dentro de los elementos de la cuadrícula */
+.grid-articulo p {
+    font-size: 16px;
+    color: #555;
+}
+/* Contenedor de cuadrícula para la sección de testimonios */
+.testimonios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+
+/* Estilo para cada testimonio individual */
+.testimonios-articulo {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+/* Estilo para las imágenes de los testimonios */
+
+.testimonios-articulo img {
+    width: 40px;
+    height: 40px;
+}
+/* Estilo para el texto dentro de los testimonios */
+.testimonios-articulo p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* responsive grid  */
+.grid-contenedor {
+    grid-auto-rows: 1fr;
+}
+
+
+  /* estilo para el pie de página */
+  .footer{
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+/*hace que el contenedor de las redes sociales se muestre
+ en linea y se desplace hacia la izquierda con un margen */
+
+.redes-sociales{
+    display: inline-block;
+    
+}
+
+/*estilos de los iconos */
+
+.icon {
+    color: rgb(0, 0, 0);
+    font-size: 1.55rem;
+    display: inline-block;
+    margin:  0 0.325rem; 
+    transition: 0.5s;
+    margin-top: 1.25rem;
+    
+}
+
+.icon:hover{
+    transform:translateY(-0.625rem); /* 10px */
+}
+
+/*estable el color , alineacion y tamaño del texto*/
+
+.text{
+    color:black;
+    display: inline-block;
+    text-align: center;
+    font-size:1.25rem; /* 20px */
+}
+
+.comentarios{
+   margin-left: 17%;
+   width: 63%; 
+   display: flex;
+   flex-direction: column; 
+   align-items: flex-start;
+}
+
+/* estilo del label */
+.input-label {
+    font-size: 16px;
+    margin-bottom: 8px; 
+    color: #333; 
+    margin-left: 19px;
+}
+
+/* estilo del input */
+.input-text {
+    width: 102%; 
+    height: 100px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
+    margin-left: 16px;
+}
+
+/* cambiar borde al enfocar el input */
+.input-text:focus {
+    border-color: black; 
+    outline: none; 
+}
